@@ -1,31 +1,33 @@
-## Decision Tree Implementation
-This project provides an implementation of the Decision Tree algorithm using Python. The Decision Tree is a widely used supervised machine learning algorithm for classification and regression tasks.
-This implementation allows you to build a decision tree model from a given dataset and make predictions on new data points. This decision tree model is used on the iris dataset which is a multi class classification problem.
+# Decision Tree Implementation
+This project provides an recursive implementation of the Decision Tree algorithm using Python.
+The purpose of this implementation is to allow you to build a decision tree model from a given dataset and make predictions on new data points.
 
-Features
-Constructs a decision tree from a training dataset from scratch without using any predefined library models.
-Supports both categorical and numerical features
-Handles missing values in the dataset
-Performs classification tasks
-Calculates various evaluation metrics such as accuracy, precision
-Visualizes the constructed decision tree
-Installation
-To use this decision tree implementation, you need to have Python 3.x installed on your system. You can clone this repository or download the project files as a ZIP archive.
+# Features
+* Constructs a decision tree from a training dataset from scratch.
+* Supports both categorical and numerical features
+* Handles missing values in the dataset
+* Performs classification tasks
+* Calculates various evaluation metrics such as accuracy, gain ratio(using entropy and split info)
+* Visualizes the constructed decision tree by printing the information of each node in a preorder fashion
 
-Dataset Overview:
-The Iris dataset consists of 150 samples with 4 features: sepal length, sepal width, petal length, and petal width.
-Each sample belongs to one of three classes: setosa, versicolor, or virginica.
-The dataset is commonly used for classification tasks and serves as a benchmark for evaluating machine learning algorithms.
+# Installation
+To use this project, you need to have Python 3.x installed on your system. You can clone this repository or download the project files as a ZIP archive.
 
-Load and preprocess the dataset:
-Update the code to load your dataset.
-Preprocess the dataset if necessary (e.g., handle missing values, normalize features).
+# Dataset Overview:
+* The Iris dataset consists of 150 samples with 4 features: sepal length, sepal width, petal length, and petal width.
+* Each sample belongs to one of three classes: setosa, versicolor, or virginica.
+* each feature is numeric in nature.
 
-Split the dataset into training and testing sets:
-Use a suitable method to split your dataset into training and testing sets (e.g., train-test split from scikit-learn).
+# Load and preprocess the dataset:
+* import the iris dataset from sklearn.datasets
+* Preprocess the dataset if necessary (e.g., handle missing values, normalize features).
 
-Train the decision tree model:
-Pass the training data and corresponding labels to the DecisionTreeClassifier class in decision_tree.py.
+# Split the dataset into training and testing sets:
+* Use a suitable method to split your dataset into training and testing sets (e.g., train-test split from scikit-learn).
+
+# Train the decision tree model:
+* the classifier is the
+* Pass the training data and corresponding labels to the build tree class in the code
 Call the fit() method to train the decision tree model.
 
 Evaluate the model:
