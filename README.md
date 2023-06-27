@@ -31,7 +31,7 @@ To use this project, you need to have Python 3.x installed on your system. You c
 
 # Train the decision tree model:
 * build tree functions as the classifier in the code
-* we call fit function and Pass the training
+* we call fit function and Pass the training data
 * each node is printed in preorder fashion, the data printed is-
   * level of the node
   * the count of each class
