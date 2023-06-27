@@ -21,25 +21,31 @@ To use this project, you need to have Python 3.x installed on your system. You c
 # Load and preprocess the dataset:
 * import the iris dataset from sklearn.datasets
 * Preprocess the dataset if necessary (e.g., handle missing values, normalize features).
+* in case of numeric features you need to define the decision boundaries for the dataset-
+  * domain knowledge(number of classes in the dataset)
+  * feature distribution(which means analyze the distribution of the input features whether their are clusters or not)
+  * Granularity required(whether their is need of more detailed catogrization)
 
 # Split the dataset into training and testing sets:
 * Use a suitable method to split your dataset into training and testing sets (e.g., train-test split from scikit-learn).
 
 # Train the decision tree model:
-* the classifier is the
-* Pass the training data and corresponding labels to the build tree class in the code
-Call the fit() method to train the decision tree model.
+* build tree functions as the classifier in the code
+* we call fit function and Pass the training
+* each node is printed in preorder fashion, the data printed is-
+  * level of the node
+  * the count of each class
+  * entropy of each node
+  * the feature on which the node is to be slpitted and gain ration associated with that split
 
-Evaluate the model:
-Use the trained decision tree to make predictions on the testing data.
-Calculate evaluation metrics (e.g., accuracy, precision, recall) to assess the performance of the model.
+# Evaluate the model:
+* Calculate evaluation metrics(e.g., accuracy, precision, recall)to assess the performance of the model.
 
-Visualization of the Decision Tree:
-Visualized the decision tree using the graphviz and pydotplus libraries.
-Saved the decision tree visualization as a PDF file.
+# Visualization of the Decision Tree:
+* Visualized the decision tree using the graphviz and pydotplus libraries.
+* saved the decision tree visualization as a pdf file.
 
-Acknowledgements
-This implementation is based on the principles and concepts of decision trees in machine learning. It incorporates ideas from various educational resources, tutorials, and open-source projects.
+
 
 If you find this implementation helpful, consider giving it a star on GitHub and sharing it with others who might benefit from it.
 
